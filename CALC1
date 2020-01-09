@@ -1,0 +1,14 @@
+user=str
+end="0"
+hours = round(40,2)
+print()
+user=input("Enter name or '0' to exit:")
+if user==end:
+    print("Would you like to calculate another report?")
+else:
+    hours=(float(input("Enter hours worked:",)))
+    payrate=(float(input("Enter payrate:$",)))
+if hours<40:
+    print("Employee's Name:",user)
+    regularpay=round(hours*payrate,2)
+    print("Gross Pay:$",regularpay)
